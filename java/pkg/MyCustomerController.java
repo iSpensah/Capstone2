@@ -21,7 +21,6 @@ public class MyCustomerController {
 		return "dashboard";
 	}
 	
-	
 	@RequestMapping("/showAllCustomerDetails")
 	public String showAllCustomerDetails(Model model)
 	{
@@ -89,9 +88,7 @@ public class MyCustomerController {
 	@RequestMapping("/editCustomerForm/{cid}")
 	public String editCustomerForm(@PathVariable int cid, Model model)
 	{
-		CustomerInfo objCustomer = objtemplate.searchCustomer(cid);
-		
-				
+		CustomerInfo objCustomer = objtemplate.searchCustomer(cid);		
 		model.addAttribute("customer",objCustomer);
 		return "editForm";  
 	}

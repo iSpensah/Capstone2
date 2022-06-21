@@ -60,14 +60,17 @@
   background: #04AA6D; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
+body {
+background-color: coral;
+}
 </style>
  
 </head>
-<body>
+<body >
  <!-- Start of left panel -->
  <div id="profile_leftPanel">
    <form action="viewFilterProduct">
-	<input type="checkbox">All Categories
+	<input type="checkbox" name= "All" value="All">All Categories
 	<br>
 	<c:forEach var="categoryname" items="${procat}">
         <input type="checkbox" name="cat" value="${categoryname}"/> <label>${categoryname} <label/>
@@ -79,8 +82,8 @@
  
  <!-- start of Price Slider -->
  <div class="slidecontainer">
- <p> 0<p/><input type="range" min="1" max="10000" value="10000" name="pprice" class="slider" id="myRange">  <p> 10000<p/>
-  <p>Value: <span id="demo"></span></p>
+ <p> <p/><input type="range" min="1" max="10000" value="10000" name="pprice" class="slider" id="myRange"> 
+  <p>Price Range: <span id="demo"></span></p>
 </div>
  <!-- End of Price Slider -->
 </form>
@@ -105,17 +108,17 @@ slider.oninput = function() {
   <li class="horizontal" style="display: inline;">
     <div class="product">
       <div class="image">
-        <img class="img-responsive" src="${product.imagepath}" width="190" height = "170"/>
+        <img class="img-responsive" src="${product.imagepath}" width="230" height = "230"/>
       </div>
       <div class="description">
-        <h4 class="productname">${product.productname}</h4>
+        <h4 class="productname">${product.productname} /${product.productid}</h4>
       </div>
       <div class="price">
        <h4>Price: <span>${product.pprice}</span></h4>
        <p>Stocks <span>${product.QOH}</span></p>
        <p>Category : <span>${product.categoryname}</span></p>
         <input type="button" class="btn btn-primary btn-sm" value="Details" />
-        <input type="button" class="btn btn-primary btn-sm" value="Add to Cart" />
+        <a href="addtocart/${product.productid}"><input type="button" class="btn btn-primary btn-sm" value="Add to Cart" /><a/>
       </div>
     </div>
   </li>

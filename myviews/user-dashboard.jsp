@@ -7,7 +7,15 @@
 
 <head>
     <style>
-        
+        #container {
+  		width: 100%;
+		}
+		
+		#container > .first {
+ 		 display:inline-block;
+  		float:left;
+  		width:100px;
+		}
         .close, .close1{
             position:absolute;
             top:15px;
@@ -83,7 +91,11 @@
   margin-right:5px;
   }
                 
-
+ .content{    
+        position: absolute;
+        bottom: 0;
+        left: 100;
+    }
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -142,7 +154,7 @@
     <div id="home" class="container px-4 pt-3 pt-md-0">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="#home"><img src="images/Logo.png" width="50" height="50" alt="">
+            <a class="navbar-brand" href="#home"><img src="https://static.vecteezy.com/system/resources/previews/000/582/353/large_2x/vector-shopping-icon.jpg" width="50" height="50" alt="">
             </a>
             <span class="d-none d-sm-block navbar-brand">Shopping</span>
             <span class="d-block d-sm-none navbar-brand">Shopping</span>
@@ -165,7 +177,7 @@
                     </li>
                 </ul>
             </div>
-
+            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -177,102 +189,8 @@
                                             <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 25px;"></i>
                                             <!-- <span class="items-count">7</span> – Items -->
                                         </label> 
-                                        <div class="items-list collapse" id="ViewCart">                        
-                                            <div class="item">
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <div class="item-pic">
-                                                            <img src="<c:url value="/resources/assets/1.jpg" />" class="img-fluid" alt="product">
-                                                        </div>
-                                                        </div>
-                                                        <div class="col-8 pl-0">
-                                                            <h6 class="item-name">Call of Duty</h6>
-                                                            <p class="item-price">$1199.99</p>
-                                                            <span class="item-remove"><i class="fa fa-times" aria-hidden="true"></i></span>
-                                                        </div>                           
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <div class="item-pic">
-                                                            <img src="assets/Mini/2.jpg" class="img-fluid" alt="product">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-8 pl-0">
-                                                        <h6 class="item-name">Item Name</h6>
-                                                        <p class="item-price">$50</p>
-                                                        <span class="item-remove"><i class="fa fa-times" aria-hidden="true"></i></span>
-                                                    </div>                           
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <div class="item-pic">
-                                                            <img src="assets/Mini/3.jpg" class="img-fluid" alt="product">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-8 pl-0">
-                                                        <h6 class="item-name">Valorant the Rising</h6>
-                                                        <p class="item-price">$1120.19</p>
-                                                        <span class="item-remove"><i class="fa fa-times" aria-hidden="true"></i></span>
-                                                    </div>                           
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <div class="item-pic">
-                                                            <img src="assets/Mini/4.jpg" class="img-fluid" alt="product">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-8 pl-0">
-                                                        <h6 class="item-name">Valorant</h6>
-                                                        <p class="item-price">$1212.89</p>
-                                                        <span class="item-remove"><i class="fa fa-times" aria-hidden="true"></i></span>
-                                                    </div>                           
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <div class="item-pic">
-                                                            <img src="assets/Mini/5.jpg" class="img-fluid" alt="product">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-8 pl-0">
-                                                        <h6 class="item-name">CS: Go </h6>
-                                                        <p class="item-price">$910.69</p>
-                                                        <span class="item-remove"><i class="fa fa-times" aria-hidden="true"></i></span>
-                                                    </div>                           
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <div class="item-pic">
-                                                            <img src="assets/Mini/6.jpg" class="img-fluid" alt="product">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-8 pl-0">
-                                                        <h6 class="item-name">One Piece</h6>
-                                                        <p class="item-price">$819.59</p>
-                                                        <span class="item-remove"><i class="fa fa-times" aria-hidden="true"></i></span>
-                                                    </div>                           
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="view-cart">
-                                                    <span class="close-cart" data-toggle="collapse" onclick="modalClose()">Close</span>
-                                                    <a href="user-checkout.html">View Cart</a>                                                     
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
+                                   
+                                            
                     <script>
                     $(".item-remove").click(function(event) {
                         event.preventDefault();
@@ -293,89 +211,52 @@
                 </ul>
             </div>
         </nav>
-       
     </div>
+    <!--  
     <section class="background-slider" style="margin-top: -130px;">
         <div>
             <!-- <h2>Play to win, but enjoy the fun.</h2> -->
         </div>
     </section>
-
     <script>
-        function changeBg(){
-
-            const images = [
-            'url("assets/1.jpg")',
-            'url("assets/2.jpg")',
-            'url("assets/3.jpg")',
-            'url("assets/4.jpg")',
-            'url("assets/5.jpg")',
-            'url("assets/6.jpg")',
-            'url("assets/7.jpg")',
-            ];
-
-            const section = document.querySelector('.background-slider');
-            const bg = images[Math.floor(Math.random() * images.length)];
-            section.style.backgroundImage = bg;
-        }
-
-        setInterval(changeBg, 1500);
-
     </script>
-    <!-- <div id="" class="">
-        <div class="row ">
-            <div class="col-lg-6 title mt-2 mb-5 ">
-                <h1 class="d-none d-sm-block big-heading mb-2">Shop Now!</h1>
-                <h1 class="d-block d-sm-none big-heading mb-2">Shop Now!</h1>
-                <p class="d-none d-sm-block subtitle mb-4">We <span>offer great</span> values</p>
-                <p class="d-block d-sm-none subtitle mb-4"></p>
-                <a href="#products"><button type="button"
-                        class="title-button btn btn-lg rounded-pill">Shop</button></a>
-            </div>
-            <div class="col-lg-6 d-md-flex justify-content-center title-image ">
-                <img width="700" class="img-fluid home-image d-none d-sm-block" src="http://clipart-library.com/images_k/transparent-png-online/transparent-png-online-21.png" alt="">
-            </div>
-        </div>
-    </div> -->
 
+<section id="categoryfilter" align = "left">
+<div id="container">
+<div class='first' >
+<div class="sidebar active"> </div>
+<ul class="nav-links">
+<form action="user-dashboard">
+		<c:forEach var="categoryname" items="${procat}">
+		<input type="checkbox" name="cat" value="${categoryname}"/> <label>${categoryname}<label/>
+		</c:forEach>
+		<input type="Submit" value="FILTER"/>
+</form> 
+</ul>
+</div>
+</div>
+<section/>
 
-    <!-- Products -->
-    <section id="products">
-        <div class="owl-carousel owl-theme">
-            <div class="item"><h4>1</h4></div>
-            <div class="item"><h4>2</h4></div>
-            <div class="item"><h4>3</h4></div>
-            <div class="item"><h4>4</h4></div>
-            <div class="item"><h4>5</h4></div>
-            <div class="item"><h4>6</h4></div>
-            <div class="item"><h4>7</h4></div>
-            <div class="item"><h4>8</h4></div>
-            <div class="item"><h4>9</h4></div>
-            <div class="item"><h4>10</h4></div>
-            <div class="item"><h4>11</h4></div>
-            <div class="item"><h4>12</h4></div>
-        </div>
-        
+	<section id="products">
          <!-- HOT HOTHOTHOTHOTHOTHOTHOTHOTHOHTOHOTHOTHOHTOHTOHTOHTOHT-->
-		
         <div class="container px-4" id="container">
-            <h1 class="padding-t pt-5 pt-md-0 products-heading text-center">Products</h1>
+            <h1 align= "center"">Products</h1> 
             <h5 class="text-center text-secondary">New Release</h5>
             <div class="row mb-5 mt-3">
-            
               <!-- HOT HOTHOTHOTHOTHOTHOTHOTHOTHOHTOHOTHOTHOHTOHTOHTOHTOHT-->
-            
               <c:forEach var="product" items="${allproducts}">
-                <div class="products-column col-md-3 p-3" onclick="modalProduct()" style="cursor:pointer">
+                <div class="products-column col-md-3 p-4" onclick="modalProduct()" style="cursor:pointer">
                     <div class="card">
                     <!-- Image here IMAGE -->
-                        <img src="${product.imagepath}" class="card-img-top" alt="...">
+                        <img src="${product.imagepath}" " class="card-img-top" alt="..." height = '160'>
                         <div class="card-body">
                             <h3 class="card-title font-weight-bold">${product.productname}</h3>
-                            <p class="card-text text-secondary">$ ${product.pprice}</p> 
-                            <p class="card-text text-secondary">Stocks ${product.QOH}</p> 
+                    
                             <br />
-                            <div class = "rating d-flex mt-1">
+                        </div>
+                          <p class="card-text text-secondary">$ ${product.pprice}</p> 
+                            <p class="card-text text-secondary">Stocks ${product.QOH}</p> 
+                          <div class = "">
                                 <span>
                                     <i class = "fa fa-star"></i> 
                                 </span>
@@ -392,28 +273,22 @@
                                     <i class = "fa fa-star"></i>
                                 </span>
                             </div>
-                
-                            <div class="d-flex justify-content-end">
+                         <div class="d-flex justify-content-end">
                                 <a href="" target="_blank"
                                     class="products-button text-white mt-3 mt-md-0"><i
                                         class="fa fa-cart-plus"></i></a>
                             </div>
-                        </div>
                     </div>
                 </div>
                 </c:forEach> 
     </section>
   <!-- HOT HOTHOTHOTHOTHOTHOTHOTHOTHOHTOHOTHOTHOHTOHTOHTOHTOHT-->
-    
-  
     <section>
         <div class="hot">
             <div  class="vampire">  
             </div>
-            
         </div>
     </section>
-
     <section id="products">
         <div class="owl-carousel owl-theme">
             <div class="item"><h4>1</h4></div>
@@ -429,17 +304,18 @@
             <div class="item"><h4>11</h4></div>
             <div class="item"><h4>12</h4></div>
         </div>
-
         <div class="container px-4" id="container">
             <h1 class="padding-t pt-5 pt-md-0 products-heading text-center" style="font-style: italic;">Popular Right Now</h1>
             <h5 class="text-center text-secondary"></h5>
             <div class="row mb-5 mt-3">
+            
+            <c:forEach var="product" items="${allproducts}">
                 <div class="products-column col-md-3 p-3" onclick="modalProduct()" style="cursor:pointer">
                     <div class="card">
-                        <img src="images/gotg.jpg" class="card-img-top" alt="...">
+                        <img src="${product.imagepath }" class="card-img-top" alt="..." height = '150'>
                         <div class="card-body">
-                            <h3 class="card-title font-weight-bold">Guardians of the Galaxy</h3>
-                            <p class="card-text text-secondary">P 2899.99</p>
+                            <h3 class="card-title font-weight-bold">${product.productname }</h3>
+                            <p class="card-text text-secondary">P ${product.pprice }</p>
                             <br />
                             <div class = "rating d-flex mt-1">
                                 <span>
@@ -458,7 +334,6 @@
                                     <i class = "fa fa-star"></i>
                                 </span>
                             </div>
-                
                             <div class="d-flex justify-content-end">
                                 <a href="" target="_blank"
                                     class="products-button text-white mt-3 mt-md-0"><i
@@ -467,290 +342,44 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="products-column col-md-3 p-3" onclick="modalProduct()" style="cursor:pointer">
-                    <div class="card">
-                        <img src="images/neo.jpg" class="card-img-top" alt="...">
-                        <div class="card-body d-flex flex-column h-100">
-                            <h3 class=" card-title font-weight-bold">NEO: The World Ends with You</h3>
-                            <p class="flex-grow-1 card-text text-secondary">P 2899.99</p>
-                                <div class = "rating d-flex mt-1">
-                                    <span>
-                                        <i class = "fa fa-star"></i>
-                                    </span>
-                                    <span>
-                                        <i class = "fa fa-star"></i>
-                                    </span>
-                                    <span>
-                                        <i class = "fa fa-star"></i>
-                                    </span>
-                                    <span>
-                                        <i class = "fa fa-star"></i>
-                                    </span>
-                                    <span>
-                                        <i class = "fa fa-star"></i>
-                                    </span>
-                                </div>
-                            
-                            
-                            <div class="d-flex justify-content-end">
-                                <a href="" target="_blank"
-                                    class="products-button text-white mt-3 mt-md-0"><i
-                                        class="fa fa-cart-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="products-column col-md-3 p-3" onclick="modalProduct()" style="cursor:pointer">
-                    <div class="card">
-                        <img src="images/gotham.jpg" class="card-img-top" alt="...">
-                        <div class="card-body d-flex flex-column h-100">
-                            <h3 class=" card-title font-weight-bold">Gotham Knights</h3>
-                            <p class="flex-grow-1 card-text text-secondary">P 2499.99
-                            </p>
-                            <div class = "rating d-flex mt-1">
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                            </div>
-
-                            <div class="d-flex justify-content-end">
-                                <a href="" target="_blank"
-                                    class="products-button text-white mt-3 mt-md-0"><i
-                                        class="fa fa-cart-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="products-column col-md-3 p-3" onclick="modalProduct()" style="cursor:pointer">
-                    <div class="card">
-                        <img src="images/kof.jpg" class="card-img-top" alt="...">
-                        <div class="card-body d-flex flex-column h-100">
-                            <h3 class=" card-title font-weight-bold">King of Fighters XV</h3>
-                            <p class="flex-grow-1 card-text text-secondary">P 1999.99
-                            </p>
-                            <div class = "rating d-flex mt-1">
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                            </div>
-
-                            <div class="d-flex justify-content-end">
-                                <a href="" target="_blank"
-                                    class="products-button text-white mt-3 mt-md-0"><i
-                                        class="fa fa-cart-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="products-column col-md-3 p-3" onclick="modalProduct()" style="cursor:pointer">
-                    <div class="card">
-                        <img src="images/vampire.jpg" class="card-img-top" alt="...">
-                        <div class="card-body d-flex flex-column h-100">
-                            <h3 class=" card-title font-weight-bold">Vampire: The Masquerade</h3>
-                            <p class="flex-grow-1 card-text text-secondary">P 1579.99
-                            </p>
-                            <div class = "rating d-flex mt-1">
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                            </div>
-
-                            <div class="d-flex justify-content-end">
-                                <a href="" target="_blank"
-                                    class="products-button text-white mt-3 mt-md-0"><i
-                                        class="fa fa-cart-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="products-column col-md-3 p-3" onclick="modalProduct()" style="cursor:pointer">
-                    <div class="card">
-                        <img src="images/escape.jpg" class="card-img-top" alt="...">
-                        <div class="card-body d-flex flex-column h-100">
-                            <h3 class=" card-title font-weight-bold">The Escapist 2</h3>
-                            <p class="flex-grow-1 card-text text-secondary">P 649.99
-                            </p>
-                            <div class = "rating d-flex mt-1">
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                            </div>
-
-                            <div class="d-flex justify-content-end">
-                                <a href="" target="_blank"
-                                    class="products-button text-white mt-3 mt-md-0"><i
-                                        class="fa fa-cart-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="products-column col-md-3 p-3" onclick="modalProduct()" style="cursor:pointer">
-                    <div class="card">
-                        <img src="images/sakuna.jpg" class="card-img-top" alt="...">
-                        <div class="card-body d-flex flex-column h-100">
-                            <h3 class=" card-title font-weight-bold">Sakuna: Of Rice and Ruin</h3>
-                            <p class="flex-grow-1 card-text text-secondary">P 649.99
-                            </p>
-                            <div class = "rating d-flex mt-1">
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                            </div>
-
-                            <div class="d-flex justify-content-end">
-                                <a href="" target="_blank"
-                                    class="products-button text-white mt-3 mt-md-0"><i
-                                        class="fa fa-cart-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="products-column col-md-3 p-3" onclick="modalProduct()" style="cursor:pointer">
-                    <div class="card">
-                        <img src="images/genshin.jpg" class="card-img-top" alt="...">
-                        <div class="card-body d-flex flex-column h-100">
-                            <h3 class=" card-title font-weight-bold">Genshin Impact</h3>
-                            <p class="flex-grow-1 card-text text-secondary">Free
-                            </p>
-                            <div class = "rating d-flex mt-1">
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                                <span>
-                                    <i class = "fa fa-star"></i>
-                                </span>
-                            </div>
-
-                            <div class="d-flex justify-content-end">
-                                <a href="" target="_blank"
-                                    class="products-button text-white mt-3 mt-md-0"><i
-                                        class="fa fa-cart-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+	</c:forEach> 
     </section>
-
     <!-- Most Played Games -->
     <section>
         <div  class="most-played">
-            <div  class="vampire">
+            <div  class="vampire" items>
                     <h1>Trigon: Space Story</h1>
                     <button class="view-more">View More</button>
                     <span style="font-weight:bolder">&nbsp;$34.91</span>
             </div>
-            
         </div>
     </section>
-
     <!-- Gamers Review -->
     <section id="products">
-
         <div class="container px-4" id="container">
             <h1 class="padding-t pt-5 pt-md-0 products-heading text-center">Gamers Review</h1>
             <div class="row mb-5 mt-3">
                 <div class="products-column col-md-3 p-3" >
                     <div class="card">
-                        <img src="assets/Gamers Review Pic/Miracle.jpg" class="card-img-top" alt="...">
+                        <img src="https://cdn2.careeraddict.com/uploads/article/55427/amer-al-barkawi-700-400.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h3 class="card-title font-weight-bold" style="text-align: left;">Miracle</h3>
                             <p class="card-text text-secondary">I really want this game tried buying it put my payment method was declined and i know i have enough on my card. I wish i knew why my payment method was...</p>
                         </div>
                     </div>
                 </div>
-
                 <div class="products-column col-md-3 p-3">
                     <div class="card">
-                        <img src="assets/Gamers Review Pic/Dendi.jpg" class="card-img-top" alt="...">
+                        <img src="https://i.ytimg.com/vi/pXe781scZ6w/maxresdefault.jpg" class="card-img-top" alt="...">
                         <div class="card-body d-flex flex-column h-100">
                             <h3 class=" card-title font-weight-bold" style="text-align: left;">Dendi</h3>
                             <p class="flex-grow-1 card-text text-secondary">Like it a lot , easy to buy , legit , instant delivery , all game requirements listed below , description of the game below , easy payment. game in fun to play ,...</p>
                         </div>
                     </div>
                 </div>
-
                 <div class="products-column col-md-3 p-3">
                     <div class="card">
-                        <img src="assets/Gamers Review Pic/Yaphets.jpeg" class="card-img-top" alt="...">
+                        <img src="https://th.bing.com/th/id/OIP.ebJn6kDCBSKBCYBNvE16mwHaEe?pid=ImgDet&rs=1" class="card-img-top" alt="...">
                         <div class="card-body d-flex flex-column h-100">
                             <h3 class=" card-title font-weight-bold" style="text-align: left;">YaphetS</h3>
                             <p class="flex-grow-1 card-text text-secondary">One word incredible. This game saved my mother from cancer and saved my right testicle going to the shredder . After having that experience Im a new man and am living my life very well everything...
@@ -761,7 +390,7 @@
 
                 <div class="products-column col-md-3 p-3">
                     <div class="card">
-                        <img src="assets/Gamers Review Pic/Abed.jpg" class="card-img-top" alt="...">
+                        <img src="https://i.ytimg.com/vi/L4EKQ7EHtow/maxresdefault.jpg" class="card-img-top" alt="...">
                         <div class="card-body d-flex flex-column h-100">
                             <h3 class=" card-title font-weight-bold" style="text-align: left;">Abed</h3>
                             <p class="flex-grow-1 card-text text-secondary"> I really want this game tried buying it put my payment method was declined and i know i have enough on my card. I wish i knew why my payment method was...
@@ -772,7 +401,6 @@
             </div>
         </div>
     </section>
-
     <!-- Categories -->
     <section id="products"></section>
 
@@ -858,8 +486,6 @@
                   </div>
             </div>
         </div>
-
-
     <!-- Contact -->
     <section id="contact">
         <div class="container px-4">
@@ -893,7 +519,6 @@
 
                 </div>
                 <div class="contact-form col-lg-6 order-1">
-
                     <form action="mailto:" method="post" enctype="text/plain">
                         <div class="row">
                             <div class="col-md-6 form-group first-name-box required">
@@ -923,15 +548,9 @@
                 </div>
             </div>
         </div>
-
     </section>
-
-
-
     <!-- Footer -->
     <footer id="footer">
-
-
         <div class="text-center">
             <div class="container">
                 <div class="row">
